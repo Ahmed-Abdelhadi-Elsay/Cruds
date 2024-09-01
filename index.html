@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="title">
+                <h3 style="font-size: 30px;">CRUDS</h3>
+                <p>CREATE READ UPDATE DELETE SEARCH</p>
+            </div>
+            <div class="col">
+                <input id="title" type="text" placeholder="title">
+                <div class="mony">
+                    <input onkeyup="calcprice()" id="price" placeholder="price" type="number">
+                    <input onkeyup="calcprice()" id="taxes" placeholder="taxes" type="number">
+                    <input onkeyup="calcprice()" id="ads" placeholder="ads" type="number">
+                    <input onkeyup="calcprice()" id="discout" placeholder="discout" type="number">
+                    <p id="count_total_color">total: <span id="count_total"></span></p>
+                </div>
+                <input id="count" type="number" placeholder="count">
+                <input id="category" type="text" placeholder="category">
+                <button class="creat">creat</button>
+                <input onkeyup="search_data(this.value)" id="search" type="text" placeholder="search">
+                <div class="btn-serch">
+                    <button onclick="getbTnSearch(this.id)" id="Search_By_title">Search By title</button>
+                    <button onclick="getbTnSearch(this.id)" id="Search_By_Category">Search By Category</button>
+                </div>
+                <div id="deleteall">
+                    
+                </div>
+            </div>
+            <div class="col2">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>TITLE</th>
+                            <th>PRICE</th>
+                            <th>TAXES</th>
+                            <th>ADS</th>
+                            <th>DISCOUNT</th>
+                            <th>TOTAL</th>
+                            <th>CATEGORY</th>
+                            <th>UPDATE</th>
+                            <th>DELETE</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="training.js"></script> -->
+    <script src="tatbek.js"></script>
+</body>
+</html>

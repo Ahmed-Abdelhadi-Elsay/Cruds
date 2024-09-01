@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:#02062c;
+}
+.container {
+    padding: 3rem 8rem;
+    color: #fff;
+}
+.row .title {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.row .title p {
+    font-size: 15px;
+    margin-top: 0.3rem;
+}
+/* input start */
+input,
+.creat {
+    background-color: cadetblue;
+    border: none;
+    outline: none;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+    margin: 5px;
+    color: #fff;
+    width: 100%;
+    transition: 0.4s ease;
+    font-size: 25px;
+}
+input::placeholder {
+    color: #000;
+}
+.mony {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+.mony input {
+    width: 250px;
+}
+.mony p {
+    background-color: brown;
+    padding: .2rem 0.5rem;
+    border-radius: 5px;
+    margin: 5px;
+}
+input:hover,
+input:focus{
+    transform: scale(1.1);
+}
+/* input end */
+.creat {
+    background-color: chocolate;
+    transition: 0.4s ease;
+    border-radius: 8px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.creat:hover,
+.btn-serch button:hover,
+.Delete-All:hover,
+#deleteall button:hover{
+    background-color:rgba(255, 106, 0, 0.705);
+}
+.btn-serch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-serch button,
+#deleteall button{
+    background-color: chocolate;
+    border: none;
+    outline: none;
+    padding: .2rem 0.5rem;
+    border-radius: 3px;
+    margin: 5px;
+    color: #fff;
+    transition: 0.4s ease;
+    background-color: chocolate;
+    transition: 0.4s ease;
+    border-radius: 8px;
+    font-size: 25px;
+    cursor: pointer;
+}
+#deleteall{
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+}
+#deleteall button {
+    width: 100%;
+    font-size: 25px;
+}
+table{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 20px;
+}
+table th{
+    padding: 0 1.50rem;
+    font-size: 20px;
+    color:rgba(12, 247, 255, 0.767);
+}
+table button {
+    border: none;
+    outline: none;
+    padding: .9rem 0.9rem;
+    border-radius: 3px;
+    margin: 5px;
+    color: #fff;
+    transition: 0.4s ease;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#delete {
+    background-color: brown;
+}
+#delete:hover{
+    background-color: crimson;
+}
+#update {
+    background-color: darkgreen;
+}
+#update:hover{
+    background-color: rgba(128, 255, 0, 0.63);
+}
